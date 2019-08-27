@@ -4,7 +4,7 @@ Plugin for Redmine to tint issues by age and due date
 
 ### Use case(s)
 
-* Color issues in issue index view by age, start date and due date
+* color issues in issue index view by age, start date and due date
 
 ### Install
 
@@ -26,17 +26,17 @@ Plugin for Redmine to tint issues by age and due date
 
 ### Use
 
-* Go to Projects-><your project>->Configuration->Modules and tick Redmine Tint Issues
+* Go to Projects->&lt;your project&gt;->Configuration->Modules and tick 'Tint Issues'
 * Go to Administration->Plugins->Redmine Tint Issues and select approriate ages for tickets
-* On Issue index page you will see issue rows colored by age having left and side colored bars
+* On issue index page you will see issue rows colored by age having left and side colored bars
   
 ### How is the color determined?
 
-Redmine Tint Issues looks for an issue start date. If it cannot find a start date, because it is empty, then it uses the issue creation date. Redmine Tint Issues wil calculate the age based on today minus the aformentioned dates and color the issue row accordingly. 
+Redmine Tint Issues looks for an issue start date. If it cannot find a start date, because it is empty, then it uses the issue creation date. Redmine Tint Issues wil calculate the age based on today minus the aforementioned dates and color the issue row accordingly. 
 
 If the issue has a due date, then Redmine Tint Issues will put a grey, green, orange or red bar on the left and right side of the issue row. If the issue is overdue, the issue will be marked with two black bars.
 
-The style can easily be changed by amnending the style sheet in the assets/styleshets folder. Do not edit the styleshet in the public/plugin_assets folder as it will be overridden each tim redmine is rebootet.
+The style can easily be changed by amending the style sheet in the assets/styleshets folder. Do not edit the styleshet in the public/plugin_assets folder as it will be overridden each time redmine is rebootet.
 
 **Have fun!**
 
