@@ -14,6 +14,8 @@ Plugin for Redmine to tint issues by age and due date
 
 `sudo /etc/init.d/apache2 restart`
 
+(no migration is necessary)
+
 ### Uninstall
 
 1. go to plugins folder, delete plugin folder redmine_tint_issues
