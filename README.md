@@ -28,7 +28,7 @@ Plugin for Redmine to tint issues by age and due date
 
 ### Use
 
-* Go to Projects->&lt;your project&gt;->Configuration->Modules and tick 'Tint Issues'
+* Go to Projects->&lt;your project&gt;->Settings->Modules and tick 'Tint Issues'
 * Go to Administration->Plugins->Redmine Tint Issues and select approriate ages for tickets
 * On issue index page you will see issue rows colored by age having left and side colored bars
   
