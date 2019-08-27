@@ -35,6 +35,8 @@ Plugin for Redmine to tint issues by age and due date
 
 ![PNG that represents a quick overview](/doc/plugin_configuration.png)
 
+note: you may leave input fields empty, f.i. if you just want two colors, one for 'old' and one for 'very old'
+
 * On issue index page you will see issue rows colored by age having left and side colored bars
   
 ### How is the color determined?
@@ -64,4 +66,4 @@ The style can easily be changed by amending the style sheet in the assets/styles
  - cleaned code
  
 **1.0.0** 
-  - running on Redmine 3.4.6 
+  - running on Redmine 3.4.6, 3.4.11
