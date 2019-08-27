@@ -10,9 +10,9 @@ Plugin for Redmine to tint issues by age and due date
 
 ### Install
 
-2. download plugin and copy plugin folder redmine_tint_issues to Redmine's plugins folder 
+1. download plugin and copy plugin folder redmine_tint_issues to Redmine's plugins folder 
 
-3. restart server f.i.  
+2. restart server f.i.  
 
 `sudo /etc/init.d/apache2 restart`
 
