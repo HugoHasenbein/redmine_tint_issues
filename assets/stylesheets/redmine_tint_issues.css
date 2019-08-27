@@ -1,0 +1,94 @@
+/* current */
+table.list tbody tr.current:nth-child(odd)         {  }
+table.list tbody tr.current:nth-child(even)        {  }
+table.list tbody tr.current:nth-child(odd):hover   { background-color:#ffffdd; }
+table.list tbody tr.current:nth-child(even):hover  { background-color:#ffffdd; }
+
+/* old */
+table.list tbody tr.old:nth-child(odd)             { background-color:rgba(233,255,233,1);   }
+table.list tbody tr.old:nth-child(even)            { background-color:rgba(233,255,233,0.6); }
+table.list tbody tr.old:nth-child(odd):hover       { background-color:#ffffdd; }
+table.list tbody tr.old:nth-child(even):hover      { background-color:#ffffdd; }
+
+/* older */
+table.list tbody tr.older:nth-child(odd)           { background-color:rgba(255,255,204,1);   }
+table.list tbody tr.older:nth-child(even)          { background-color:rgba(255,255,204,0.8); }
+table.list tbody tr.older:nth-child(odd):hover     { background-color:#ccccff; }
+table.list tbody tr.older:nth-child(even):hover    { background-color:#ccccff; }
+
+/* veryold */
+table.list tbody tr.veryold:nth-child(odd)         { background-color:rgba(255,221,170,1); }
+table.list tbody tr.veryold:nth-child(even)        { background-color:rgba(255,221,170,0.6);}
+table.list tbody tr.veryold:nth-child(odd):hover   { background-color:#ffffdd; }
+table.list tbody tr.veryold:nth-child(even):hover  { background-color:#ffffdd; }
+
+/* ancient */
+table.list tbody tr.ancient:nth-child(odd)         { background-color:rgba(220,220,220,1); }
+table.list tbody tr.ancient:nth-child(even)        { background-color:rgba(220,220,220,0.6);}
+table.list tbody tr.ancient:nth-child(odd):hover   { background-color:#ffffdd; }
+table.list tbody tr.ancient:nth-child(even):hover  { background-color:#ffffdd; }
+
+/* hasduedate */
+table.list tbody tr:nth-child(odd).hasduedate,
+table.list tbody tr:nth-child(even).hasduedate
+    {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-width: 5px;
+    border-left-color: #cccccc;
+    border-right-width: 5px;
+    border-right-color: #cccccc;
+    border-collapse: separate;
+    }
+    
+/* due */
+table.list tbody tr:nth-child(odd).due,
+table.list tbody tr:nth-child(even).due
+    {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-width: 5px;
+    border-left-color: #99cc00;
+    border-right-width: 5px;
+    border-right-color: #99cc00;
+    border-collapse: separate;
+    }
+    
+/* moredue */
+table.list tbody tr:nth-child(odd).moredue,
+table.list tbody tr:nth-child(even).moredue
+    {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-width: 5px;
+    border-left-color: #ff9900;
+    border-right-width: 5px;
+    border-right-color: #ff9900;
+    border-collapse: separate;
+    }
+    
+/* verydue */
+table.list tbody tr:nth-child(odd).verydue,
+table.list tbody tr:nth-child(even).verydue
+    {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-width: 5px;
+    border-left-color: #ff0000;
+    border-right-width: 5px;
+    border-right-color: #ff0000;
+    border-collapse: separate;
+    }
+    
+/* overdue */
+table.list tbody tr:nth-child(odd).overdue,
+table.list tbody tr:nth-child(even).overdue
+    {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-width: 5px;
+    border-left-color: #000000;
+    border-right-width: 5px;
+    border-right-color: #000000;
+    border-collapse: separate;
+    }

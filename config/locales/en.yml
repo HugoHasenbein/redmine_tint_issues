@@ -1,0 +1,44 @@
+# encoding: utf-8
+#
+# Redmine plugin tinting issues by age and due date
+#
+# Copyright © 2018 Stephan Wenzel <stephan.wenzel@drwpatent.de>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+
+en:
+  project_module_redmine_tint_issues: "Tint Issues"
+  
+  redmine_tint_issues:
+    settings_label_assigned_issues: 'assigned issues'
+    
+    settings_label_current_issue_age: '"current issues" are younger than'
+    settings_label_old_issue_age: '"old issues" are younger than'
+    settings_label_older_issue_age: '"older issues" are younger than'
+    settings_label_veryold_issue_age: '"very old issues" are younger than'
+    settings_label_ancient_issue_age: '"ancient" issues'
+    
+    settings_label_hours: 'hours'
+    settings_label_days: 'days'
+    settings_label_weeks: 'weeks'
+    settings_label_months: 'months'
+  
+    settings_label_hasduedate: 'has due date'
+    settings_label_due: '"due" is closer than'
+    settings_label_moredue: '"more due" is closer than'
+    settings_label_verydue: '"very due" is closer than'
+    settings_label_overdue: 'overdue '
+    settings_label_nochoice: 'no possible choice'

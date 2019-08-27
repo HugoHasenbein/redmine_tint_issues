@@ -1,0 +1,116 @@
+<table class="list issues">
+  <tr class="issue current">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_current_issue_age') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[current_issue_age]', settings['current_issue_age'] %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= select_tag 'settings[current_issue_age_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['current_issue_age_epoch']) %>
+      </td>
+  </tr>
+  <tr class="issue old">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_old_issue_age') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[old_issue_age]', settings['old_issue_age'] %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= select_tag 'settings[old_issue_age_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['old_issue_age_epoch']) %>
+      </td>
+  </tr>
+  <tr class="issue older">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_older_issue_age') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[older_issue_age]', settings['older_issue_age'] %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= select_tag 'settings[older_issue_age_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['older_issue_age_epoch']) %>
+      </td>
+  </tr>
+  <tr class="issue veryold">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_veryold_issue_age') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[veryold_issue_age]', settings['veryold_issue_age'] %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= select_tag 'settings[veryold_issue_age_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['veryold_issue_age_epoch']) %>
+      </td>
+  </tr>
+  <tr class="issue ancient">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_ancient_issue_age') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= l('redmine_tint_issues.settings_label_nochoice') %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+      </td>
+  </tr>
+</table>
+
+<table class="list issues">
+  <tr class="issue hasduedate">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_hasduedate') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= l('redmine_tint_issues.settings_label_nochoice') %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+      </td>
+  </tr>
+  <tr class="issue due">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_due') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[due_since]', settings['due_since'] %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= select_tag 'settings[due_since_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['due_since_epoch']) %>
+      </td>
+  </tr>
+  <tr class="issue moredue">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_moredue') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[moredue_since]', settings['moredue_since'] %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= select_tag 'settings[moredue_since_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['moredue_since_epoch']) %>
+      </td>
+  </tr>
+  <tr class="issue verydue">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_verydue') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[verydue_since]', settings['verydue_since'] %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= select_tag 'settings[verydue_since_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['verydue_since_epoch']) %>
+      </td>
+  </tr>
+  <tr class="issue overdue">
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <b><%= l('redmine_tint_issues.settings_label_overdue') %>:</b>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= l('redmine_tint_issues.settings_label_nochoice') %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+      </td>
+  </tr>
+</table>
+
+<%= content_for :header_tags do -%>
+  <%= stylesheet_link_tag "redmine_tint_issues.css", :plugin => "redmine_tint_issues" %>
+<%- end %>
