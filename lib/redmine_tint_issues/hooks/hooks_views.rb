@@ -1,8 +1,8 @@
 # encoding: utf-8
 #
-# lugin for Redmine to tint issues by age and due date
+# Redmine plugin to tint issues by age and due date
 #
-# Copyright © 2019 Stephan Wenzel <stephan.wenzel@drwpatent.de>
+# Copyright © 2018-2020 Stephan Wenzel <stephan.wenzel@drwpatent.de>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License

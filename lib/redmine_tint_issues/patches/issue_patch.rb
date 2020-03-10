@@ -1,8 +1,8 @@
 # encoding: utf-8
 #
-# lugin for Redmine to tint issues by age and due date
+# Redmine plugin to tint issues by age and due date
 #
-# Copyright © 2018 Stephan Wenzel <stephan.wenzel@drwpatent.de>
+# Copyright © 2018-2020 Stephan Wenzel <stephan.wenzel@drwpatent.de>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -28,7 +28,12 @@ module RedmineTintIssues
         
         base.class_eval do
         
-          alias_method_chain :css_classes, :tint_issues
+          if Rails::VERSION::MAJOR >= 5
+           alias_method        :css_classes_without_tint_issues, :css_classes
+           alias_method        :css_classes, :css_classes_with_tint_issues
+          else
+            alias_method_chain :css_classes, :tint_issues
+          end
           
         end
       end #self
@@ -44,9 +49,8 @@ module RedmineTintIssues
           s
         end #def
         
-##########################################################################################
-# handle age
-##########################################################################################
+        
+ #age
         def issue_age
           return is_current
         end #defined
@@ -91,11 +95,7 @@ module RedmineTintIssues
             veryold_issue_age
           ).any?{|age| !!dues_and_ages(age)} ? " ancient" : ""
         end #def
-        
-##########################################################################################
-# handle due date
-##########################################################################################
-        
+# due
         def issue_due
             return is_overdue if self.due_date && !self.closed?
             return ''
@@ -133,9 +133,7 @@ module RedmineTintIssues
           ).any?{|since| !!dues_and_ages(since)} ? " hasduedate" : ""
         end #def
         
-##########################################################################################
-# calculate time and time differences
-##########################################################################################
+        
         
         def to_time( timestr )
           timestr.presence && timestr.to_time
@@ -170,10 +168,6 @@ module RedmineTintIssues
             end #case
           end #if
         end #def
-        
-##########################################################################################
-# calculate once and cache date calculations
-##########################################################################################
         
         def dues_and_ages( key )
         
