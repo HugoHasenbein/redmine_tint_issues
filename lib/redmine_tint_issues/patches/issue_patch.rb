@@ -27,9 +27,10 @@ module RedmineTintIssues
         base.send(:include, InstanceMethods)
         
         base.class_eval do
-        
-          alias_method_chain :css_classes, :tint_issues
-          
+
+          alias_method :css_classes_without_tint_issues, :css_classes
+          alias_method :css_classes, :css_classes_with_tint_issues
+
         end
       end #self
       
