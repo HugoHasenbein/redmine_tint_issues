@@ -1,8 +1,8 @@
 # encoding: utf-8
 #
-# lugin for Redmine to tint issues by age and due date
+# Redmine plugin to tint issues by age and due date
 #
-# Copyright © 2019 Stephan Wenzel <stephan.wenzel@drwpatent.de>
+# Copyright © 2018-2020 Stephan Wenzel <stephan.wenzel@drwpatent.de>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -18,6 +18,11 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
+#
+#
+# 1.1.0
+#       support of Rails >= 5.0
+#
 
 require 'redmine'
 
@@ -25,7 +30,7 @@ Redmine::Plugin.register :redmine_tint_issues do
   name 'Redmine Tint Issues'
   author 'Stephan Wenzel'
   description 'Plugin for Redmine to tint issues by age and due date'
-  version '1.0.2'
+  version '1.1.0'
   url 'https://github.com/HugoHasenbein/redmine_tint_issues'
   author_url 'https://github.com/HugoHasenbein/redmine_tint_issues'
 
