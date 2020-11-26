@@ -57,6 +57,9 @@ The style can easily be changed by amending the style sheet in the assets/styles
 
 ### Change-Log* 
 
+**1.1.0**
+ - support for Rails >= 5.0
+ 
 **1.0.2**
  - simplified module support
  - cleaned code
