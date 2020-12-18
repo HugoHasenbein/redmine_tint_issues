@@ -42,3 +42,9 @@ en:
     settings_label_verydue: '"very due" is closer than'
     settings_label_overdue: 'overdue '
     settings_label_nochoice: 'no possible choice'
+    
+    label_issue_age_base: "Issue age base"
+    label_age_by_creation_date: "Age by creation date"
+    help_settings_age_by_creation_date: "Calculate issue age by creation date."
+    label_age_by_update_date: "Age by update date"
+    help_settings_age_by_update_date: "Calculate issue age by last upddate date."

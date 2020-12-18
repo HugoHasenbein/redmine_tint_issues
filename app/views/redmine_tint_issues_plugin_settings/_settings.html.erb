@@ -9,6 +9,9 @@
       <td align="left" width="33%" style="text-align:left;width=33%;">
           <%= select_tag 'settings[current_issue_age_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['current_issue_age_epoch']) %>
       </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[current_issue_age_color]', settings['current_issue_age_color'], :class => "color {hash:true}" %>
+      </td>
   </tr>
   <tr class="issue old">
       <td align="left" width="33%" style="text-align:left;width=33%;">
@@ -19,6 +22,9 @@
       </td>
       <td align="left" width="33%" style="text-align:left;width=33%;">
           <%= select_tag 'settings[old_issue_age_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['old_issue_age_epoch']) %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[old_issue_age_color]', settings['old_issue_age_color'], :class => "color {hash:true}" %>
       </td>
   </tr>
   <tr class="issue older">
@@ -31,6 +37,9 @@
       <td align="left" width="33%" style="text-align:left;width=33%;">
           <%= select_tag 'settings[older_issue_age_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['older_issue_age_epoch']) %>
       </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[older_issue_age_color]', settings['older_issue_age_color'], :class => "color {hash:true}" %>
+      </td>
   </tr>
   <tr class="issue veryold">
       <td align="left" width="33%" style="text-align:left;width=33%;">
@@ -42,6 +51,9 @@
       <td align="left" width="33%" style="text-align:left;width=33%;">
           <%= select_tag 'settings[veryold_issue_age_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['veryold_issue_age_epoch']) %>
       </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[veryold_issue_age_color]', settings['veryold_issue_age_color'], :class => "color {hash:true}" %>
+      </td>
   </tr>
   <tr class="issue ancient">
       <td align="left" width="33%" style="text-align:left;width=33%;">
@@ -51,6 +63,9 @@
           <%= l('redmine_tint_issues.settings_label_nochoice') %>
       </td>
       <td align="left" width="33%" style="text-align:left;width=33%;">
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[ancient_issue_age_color]', settings['ancient_issue_age_color'], :class => "color {hash:true}" %>
       </td>
   </tr>
 </table>
@@ -65,6 +80,9 @@
       </td>
       <td align="left" width="33%" style="text-align:left;width=33%;">
       </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[hasduedate_color]', settings['hasduedate_color'], :class => "color {hash:true}" %>
+      </td>
   </tr>
   <tr class="issue due">
       <td align="left" width="33%" style="text-align:left;width=33%;">
@@ -75,6 +93,9 @@
       </td>
       <td align="left" width="33%" style="text-align:left;width=33%;">
           <%= select_tag 'settings[due_since_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['due_since_epoch']) %>
+      </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[due_since_color]', settings['due_since_color'], :class => "color {hash:true}" %>
       </td>
   </tr>
   <tr class="issue moredue">
@@ -87,6 +108,9 @@
       <td align="left" width="33%" style="text-align:left;width=33%;">
           <%= select_tag 'settings[moredue_since_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['moredue_since_epoch']) %>
       </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[moredue_since_color]', settings['moredue_since_color'], :class => "color {hash:true}" %>
+      </td>
   </tr>
   <tr class="issue verydue">
       <td align="left" width="33%" style="text-align:left;width=33%;">
@@ -98,6 +122,9 @@
       <td align="left" width="33%" style="text-align:left;width=33%;">
           <%= select_tag 'settings[verydue_since_epoch]', options_for_select([['', ""], ["#{l('redmine_tint_issues.settings_label_hours')}", "hours"], ["#{l('redmine_tint_issues.settings_label_days')}", "days"], ["#{l('redmine_tint_issues.settings_label_weeks')}", "weeks"], ["#{l('redmine_tint_issues.settings_label_months')}", "months"] ], settings['verydue_since_epoch']) %>
       </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[verydue_since_color]', settings['verydue_since_color'], :class => "color {hash:true}" %>
+      </td>
   </tr>
   <tr class="issue overdue">
       <td align="left" width="33%" style="text-align:left;width=33%;">
@@ -108,8 +135,28 @@
       </td>
       <td align="left" width="33%" style="text-align:left;width=33%;">
       </td>
+      <td align="left" width="33%" style="text-align:left;width=33%;">
+          <%= text_field_tag 'settings[overdue_color]', settings['overdue_color'], :class => "color {hash:true}" %>
+      </td>
   </tr>
 </table>
+
+<fieldset class="box"><legend><%= l('redmine_tint_issues.label_issue_age_base') %></legend>
+  <p>
+    <%= label_tag( 'settings[age_by_creation_date]', l('redmine_tint_issues.label_age_by_creation_date')) %>
+    <%= radio_button_tag( 'settings[age_by_creation_date]', '1', settings['age_by_creation_date'] == '1') %>
+    <%= content_tag(:a,    l(:label_help), :href => "#", :class => "icon icon-help", :title => l(:label_help), :onclick => "$('#help_settings_age_by_creation_date').toggle(); return false;" ) %>
+    <%= content_tag(:span, l('redmine_tint_issues.help_settings_age_by_creation_date'), :id => 'help_settings_age_by_creation_date', :style => 'display:none;') %>
+  </p>
+  <p>
+    <%= label_tag( 'settings[age_by_creation_date]', l('redmine_tint_issues.label_age_by_update_date')) %>
+    <%= radio_button_tag( 'settings[age_by_creation_date]', '0', settings['age_by_creation_date'] == '0') %>
+    <%= content_tag(:a, l(:label_help), :href => "#", :class => "icon icon-help", :title => l(:label_help), :onclick => "$('#help_settings_age_by_update_date').toggle(); return false;" ) %>
+    <%= content_tag(:span, l('redmine_tint_issues.help_settings_age_by_update_date'), :id => 'help_settings_age_by_update_date', :style => 'display:none;') %>
+  </p>
+</fieldset>
+
+<%= javascript_include_tag "jscolor.js", :plugin => "redmine_tint_issues" %>
 
 <%= content_for :header_tags do -%>
   <%= stylesheet_link_tag "redmine_tint_issues.css", :plugin => "redmine_tint_issues" %>

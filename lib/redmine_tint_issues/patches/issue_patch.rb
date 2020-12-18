@@ -49,15 +49,22 @@ module RedmineTintIssues
           s
         end #def
         
+##########################################################################################
+# handle age
+##########################################################################################
         
- #age
+        def age_base
+          Setting['plugin_redmine_tint_issues']['age_by_creation_date'] == '0' ?  self.updated_on : self.created_on
+        end
+        
         def issue_age
           return is_current
         end #defined
         
         def is_current
           if !!dues_and_ages(:current_issue_age)
-            start   = to_time(self.start_date).presence || self.created_on
+            base    = 
+            start   = to_time(self.start_date).presence || age_base
             younger = start > dues_and_ages(:current_issue_age)
             return younger ? ' current' : is_old
           end
@@ -66,7 +73,7 @@ module RedmineTintIssues
         
         def is_old
           if !!dues_and_ages(:old_issue_age)
-            start   = to_time(self.start_date).presence || self.created_on
+            start   = to_time(self.start_date).presence || age_base
             younger = start > dues_and_ages(:old_issue_age)
             return younger ? ' old' : is_older 
           end
@@ -75,7 +82,7 @@ module RedmineTintIssues
         
         def is_older
           if !!dues_and_ages(:older_issue_age)
-            start   = to_time(self.start_date).presence || self.created_on
+            start   = to_time(self.start_date).presence || age_base
             younger = start > dues_and_ages(:older_issue_age)
             return younger ? ' older' : is_veryold
           end
@@ -84,7 +91,7 @@ module RedmineTintIssues
         
         def is_veryold
           if !!dues_and_ages(:veryold_issue_age)
-            start   = to_time(self.start_date).presence || self.created_on
+            start   = to_time(self.start_date).presence || age_base
             younger = start > dues_and_ages(:veryold_issue_age)
             return younger ? ' veryold' : ' ancient'
           end
@@ -95,7 +102,11 @@ module RedmineTintIssues
             veryold_issue_age
           ).any?{|age| !!dues_and_ages(age)} ? " ancient" : ""
         end #def
-# due
+        
+##########################################################################################
+# handle due date
+##########################################################################################
+
         def issue_due
             return is_overdue if self.due_date && !self.closed?
             return ''
@@ -133,8 +144,10 @@ module RedmineTintIssues
           ).any?{|since| !!dues_and_ages(since)} ? " hasduedate" : ""
         end #def
         
-        
-        
+##########################################################################################
+# calculate time and time differences
+##########################################################################################
+
         def to_time( timestr )
           timestr.presence && timestr.to_time
         end #def
@@ -169,6 +182,10 @@ module RedmineTintIssues
           end #if
         end #def
         
+##########################################################################################
+# calculate once and cache date calculations
+##########################################################################################
+
         def dues_and_ages( key )
         
            if defined?(@@dues_and_ages) && @@dues_and_ages.present?             

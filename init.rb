@@ -22,7 +22,10 @@
 #
 # 1.1.0
 #       support of Rails >= 5.0
-#
+#       
+# 1.2.0
+#       support for color picking and choice of issue age base
+#       
 
 require 'redmine'
 
@@ -30,7 +33,7 @@ Redmine::Plugin.register :redmine_tint_issues do
   name 'Redmine Tint Issues'
   author 'Stephan Wenzel'
   description 'Plugin for Redmine to tint issues by age and due date'
-  version '1.1.0'
+  version '1.2.0'
   url 'https://github.com/HugoHasenbein/redmine_tint_issues'
   author_url 'https://github.com/HugoHasenbein/redmine_tint_issues'
 

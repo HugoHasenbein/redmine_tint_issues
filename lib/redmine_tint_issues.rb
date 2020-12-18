@@ -20,4 +20,5 @@
 #
 
 require 'redmine_tint_issues/patches/issue_patch'
+require 'redmine_tint_issues/patches/application_helper_patch'
 require 'redmine_tint_issues/hooks/hooks_views'

@@ -35,10 +35,16 @@ de:
     settings_label_days: 'Tage'
     settings_label_weeks: 'Wochen'
     settings_label_months: 'Monate'
-  
+    
     settings_label_hasduedate: 'mit Abgabedatum'
     settings_label_due: '"Fälligkeit naht" ist näher als'
     settings_label_moredue: '"bald fällig" ist näher als'
     settings_label_verydue: '"sehr bald fällig" ist näher als'
     settings_label_overdue: 'verfristet'
     settings_label_nochoice: 'keine Auswahl möglich'
+    
+    label_issue_age_base: "Basis der Bestimmung des Alters"
+    label_age_by_creation_date: "Alter nach Anlagedatum"
+    help_settings_age_by_creation_date: "Berechne das Alter eines Tickets ausschließlich nach dem Anlagedatum."
+    label_age_by_update_date: "Alter nach Aktualisierungsdatum"
+    help_settings_age_by_update_date: "Berechne das Alter eines Tickets nach dem letzten Aktualisierungsdatum."
