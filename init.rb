@@ -26,6 +26,9 @@
 # 1.2.0
 #       support for color picking and choice of issue age base
 #       
+# 1.2.1
+#       bug fix: virgin plugin was trying to read plugin settings value, which do not exist
+#     
 
 require 'redmine'
 
@@ -33,7 +36,7 @@ Redmine::Plugin.register :redmine_tint_issues do
   name 'Redmine Tint Issues'
   author 'Stephan Wenzel'
   description 'Plugin for Redmine to tint issues by age and due date'
-  version '1.2.0'
+  version '1.2.1'
   url 'https://github.com/HugoHasenbein/redmine_tint_issues'
   author_url 'https://github.com/HugoHasenbein/redmine_tint_issues'
 

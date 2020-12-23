@@ -30,8 +30,9 @@ module RedmineTintIssues
           # calculates black or white font-color for a given background color
           # ------------------------------------------------------------------------------#
           def rti_contrast_css_color( _html_color )
+            return "black" unless _html_color
             begin
-              _rgb = _html_color.downcase.scan(/[0-9a-f]{2}/).map(&:hex)
+              _rgb = _html_color.to_s.downcase.scan(/[0-9a-f]{2}/).map(&:hex)
               (0.213 * _rgb[0] + 0.715 * _rgb[1] + 0.072 * _rgb[2])/255 > 0.5 ? "orange" : "lightyellow"
             rescue
               "black"
@@ -42,7 +43,8 @@ module RedmineTintIssues
           # lightens color cvalue
           # ------------------------------------------------------------------------------#
           def rti_lighten_css_color(hex_color, amount=0.6)
-            hex_color = hex_color.gsub('#','')
+            return "#ffffff" unless hex_color
+            hex_color = hex_color.to_s.gsub('#','')
             rgb = hex_color.scan(/../).map {|color| color.hex}
             rgb[0] = [(rgb[0].to_i + 255 * amount).round, 255].min
             rgb[1] = [(rgb[1].to_i + 255 * amount).round, 255].min
