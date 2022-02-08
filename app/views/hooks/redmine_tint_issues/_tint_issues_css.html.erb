@@ -1,6 +1,11 @@
 <%= content_for :header_tags do -%>
   <%# stylesheet_link_tag "redmine_tint_issues.css", :plugin => "redmine_tint_issues" %>
 <style>
+
+table.list {
+    border-collapse: collapse;
+}
+
 /* current */
 table.list tbody tr.current:nth-child(odd)         { background-color:<%= Setting['plugin_redmine_tint_issues']['current_issue_age_color'] %>; }
 table.list tbody tr.current:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['current_issue_age_color'], 0.05) %>; }
