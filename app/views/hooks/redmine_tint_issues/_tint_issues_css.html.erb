@@ -8,31 +8,31 @@ table.list {
 
 /* current */
 table.list tbody tr.current:nth-child(odd)         { background-color:<%= Setting['plugin_redmine_tint_issues']['current_issue_age_color'] %>; }
-table.list tbody tr.current:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['current_issue_age_color'], 0.05) %>; }
+table.list tbody tr.current:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['current_issue_age_color'], -0.05) %>; }
 table.list tbody tr.current:nth-child(odd):hover   { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['current_issue_age_color']) %>; }
 table.list tbody tr.current:nth-child(even):hover  { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['current_issue_age_color']) %>; }
 
 /* old */
 table.list tbody tr.old:nth-child(odd)             { background-color:<%= Setting['plugin_redmine_tint_issues']['old_issue_age_color'] %>; }
-table.list tbody tr.old:nth-child(even)            { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['old_issue_age_color'], 0.05) %>; }
+table.list tbody tr.old:nth-child(even)            { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['old_issue_age_color'], -0.05) %>; }
 table.list tbody tr.old:nth-child(odd):hover       { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['old_issue_age_color']) %>; }
 table.list tbody tr.old:nth-child(even):hover      { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['old_issue_age_color']) %>; }
 
 /* older */
 table.list tbody tr.older:nth-child(odd)           { background-color:<%= Setting['plugin_redmine_tint_issues']['older_issue_age_color'] %>; }
-table.list tbody tr.older:nth-child(even)          { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['older_issue_age_color'], 0.05) %>; }
+table.list tbody tr.older:nth-child(even)          { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['older_issue_age_color'], -0.05) %>; }
 table.list tbody tr.older:nth-child(odd):hover     { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['older_issue_age_color']) %>; }
 table.list tbody tr.older:nth-child(even):hover    { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['older_issue_age_color']) %>; }
 
 /* veryold */
 table.list tbody tr.veryold:nth-child(odd)         { background-color:<%= Setting['plugin_redmine_tint_issues']['veryold_issue_age_color'] %>; }
-table.list tbody tr.veryold:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['veryold_issue_age_color'], 0.05) %>; }
+table.list tbody tr.veryold:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['veryold_issue_age_color'], -0.05) %>; }
 table.list tbody tr.veryold:nth-child(odd):hover   { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['veryold_issue_age_color']) %>; }
 table.list tbody tr.veryold:nth-child(even):hover  { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['veryold_issue_age_color']) %>; }
 
 /* ancient */
 table.list tbody tr.ancient:nth-child(odd)         { background-color:<%= Setting['plugin_redmine_tint_issues']['ancient_issue_age_color'] %>; }
-table.list tbody tr.ancient:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['ancient_issue_age_color'], 0.05) %>; }
+table.list tbody tr.ancient:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['ancient_issue_age_color'], -0.05) %>; }
 table.list tbody tr.ancient:nth-child(odd):hover   { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['ancient_issue_age_color']) %>; }
 table.list tbody tr.ancient:nth-child(even):hover  { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['ancient_issue_age_color']) %>; }
 
