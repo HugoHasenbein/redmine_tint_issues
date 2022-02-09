@@ -40,7 +40,7 @@ en:
     settings_label_due: '"due" is closer than'
     settings_label_moredue: '"more due" is closer than'
     settings_label_verydue: '"very due" is closer than'
-    settings_label_overdue: 'overdue '
+    settings_label_overdue: 'overdue'
     settings_label_nochoice: 'no possible choice'
     
     label_issue_age_base: "Issue age base"
