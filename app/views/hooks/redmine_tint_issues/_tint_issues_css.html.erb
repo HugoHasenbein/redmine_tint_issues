@@ -1,96 +1,112 @@
 <%= content_for :header_tags do -%>
   <%# stylesheet_link_tag "redmine_tint_issues.css", :plugin => "redmine_tint_issues" %>
 <style>
+
 /* current */
 table.list tbody tr.current:nth-child(odd)         { background-color:<%= Setting['plugin_redmine_tint_issues']['current_issue_age_color'] %>; }
-table.list tbody tr.current:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['current_issue_age_color'], 0.05) %>; }
+table.list tbody tr.current:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['current_issue_age_color'], -0.05) %>; }
 table.list tbody tr.current:nth-child(odd):hover   { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['current_issue_age_color']) %>; }
 table.list tbody tr.current:nth-child(even):hover  { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['current_issue_age_color']) %>; }
 
 /* old */
 table.list tbody tr.old:nth-child(odd)             { background-color:<%= Setting['plugin_redmine_tint_issues']['old_issue_age_color'] %>; }
-table.list tbody tr.old:nth-child(even)            { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['old_issue_age_color'], 0.05) %>; }
+table.list tbody tr.old:nth-child(even)            { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['old_issue_age_color'], -0.05) %>; }
 table.list tbody tr.old:nth-child(odd):hover       { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['old_issue_age_color']) %>; }
 table.list tbody tr.old:nth-child(even):hover      { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['old_issue_age_color']) %>; }
 
 /* older */
 table.list tbody tr.older:nth-child(odd)           { background-color:<%= Setting['plugin_redmine_tint_issues']['older_issue_age_color'] %>; }
-table.list tbody tr.older:nth-child(even)          { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['older_issue_age_color'], 0.05) %>; }
+table.list tbody tr.older:nth-child(even)          { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['older_issue_age_color'], -0.05) %>; }
 table.list tbody tr.older:nth-child(odd):hover     { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['older_issue_age_color']) %>; }
 table.list tbody tr.older:nth-child(even):hover    { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['older_issue_age_color']) %>; }
 
 /* veryold */
 table.list tbody tr.veryold:nth-child(odd)         { background-color:<%= Setting['plugin_redmine_tint_issues']['veryold_issue_age_color'] %>; }
-table.list tbody tr.veryold:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['veryold_issue_age_color'], 0.05) %>; }
+table.list tbody tr.veryold:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['veryold_issue_age_color'], -0.05) %>; }
 table.list tbody tr.veryold:nth-child(odd):hover   { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['veryold_issue_age_color']) %>; }
 table.list tbody tr.veryold:nth-child(even):hover  { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['veryold_issue_age_color']) %>; }
 
 /* ancient */
 table.list tbody tr.ancient:nth-child(odd)         { background-color:<%= Setting['plugin_redmine_tint_issues']['ancient_issue_age_color'] %>; }
-table.list tbody tr.ancient:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['ancient_issue_age_color'], 0.05) %>; }
+table.list tbody tr.ancient:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['ancient_issue_age_color'], -0.05) %>; }
 table.list tbody tr.ancient:nth-child(odd):hover   { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['ancient_issue_age_color']) %>; }
 table.list tbody tr.ancient:nth-child(even):hover  { background-color:<%= rti_contrast_css_color( Setting['plugin_redmine_tint_issues']['ancient_issue_age_color']) %>; }
 
 /* hasduedate */
-table.list tbody tr:nth-child(odd).hasduedate,
-table.list tbody tr:nth-child(even).hasduedate
+table.list tbody tr.hasduedate td:first-of-type
     {
     border-left-style: solid;
-    border-right-style: solid;
     border-left-width: 5px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['hasduedate_color'] %>;
+    border-collapse: separate;
+    }
+table.list tbody tr.hasduedate td:last-of-type
+    {
+    border-right-style: solid;
     border-right-width: 5px;
     border-right-color:<%= Setting['plugin_redmine_tint_issues']['hasduedate_color'] %>;
     border-collapse: separate;
     }
     
 /* due */
-table.list tbody tr:nth-child(odd).due,
-table.list tbody tr:nth-child(even).due
+table.list tbody tr.due td:first-of-type
     {
     border-left-style: solid;
-    border-right-style: solid;
     border-left-width: 5px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['due_since_color'] %>;
+    border-collapse: separate;
+    }
+table.list tbody tr.due td:last-of-type
+    {
+    border-right-style: solid;
     border-right-width: 5px;
     border-right-color: <%= Setting['plugin_redmine_tint_issues']['due_since_color'] %>;
     border-collapse: separate;
     }
     
 /* moredue */
-table.list tbody tr:nth-child(odd).moredue,
-table.list tbody tr:nth-child(even).moredue
+table.list tbody tr.moredue td:first-of-type
     {
     border-left-style: solid;
-    border-right-style: solid;
     border-left-width: 5px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['moredue_since_color'] %>;
+    border-collapse: separate;
+    }
+table.list tbody tr.moredue td:last-of-type
+    {
+    border-right-style: solid;
     border-right-width: 5px;
     border-right-color: <%= Setting['plugin_redmine_tint_issues']['moredue_since_color'] %>;
     border-collapse: separate;
     }
     
 /* verydue */
-table.list tbody tr:nth-child(odd).verydue,
-table.list tbody tr:nth-child(even).verydue
+table.list tbody tr.verydue td:first-of-type
     {
     border-left-style: solid;
-    border-right-style: solid;
     border-left-width: 5px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['verydue_since_color'] %>;
+    border-collapse: separate;
+    }
+table.list tbody tr.verydue td:last-of-type
+    {
+    border-right-style: solid;
     border-right-width: 5px;
     border-right-color: <%= Setting['plugin_redmine_tint_issues']['verydue_since_color'] %>;
     border-collapse: separate;
     }
     
 /* overdue */
-table.list tbody tr:nth-child(odd).overdue,
-table.list tbody tr:nth-child(even).overdue
+table.list tbody tr.overdue td:first-of-type
     {
     border-left-style: solid;
-    border-right-style: solid;
     border-left-width: 5px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['overdue_color'] %>;
+    border-collapse: separate;
+    }
+table.list tbody tr.overdue td:last-of-type
+    {
+    border-right-style: solid;
     border-right-width: 5px;
     border-right-color: <%= Setting['plugin_redmine_tint_issues']['overdue_color'] %>;
     border-collapse: separate;
