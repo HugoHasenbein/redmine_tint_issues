@@ -36,14 +36,14 @@ en:
     settings_label_weeks: 'weeks'
     settings_label_months: 'months'
   
-    settings_label_hasduedate: 'has due date'
+    settings_label_hasduedate: 'Has due date'
     settings_label_due: '"due" is closer than'
     settings_label_moredue: '"more due" is closer than'
     settings_label_verydue: '"very due" is closer than'
-    settings_label_overdue: 'overdue'
+    settings_label_overdue: 'Overdue'
     settings_label_nochoice: 'no possible choice'
     
-    label_issue_age_base: "Issue age base"
+    label_issue_age_base: "Issue age base (without start date)"
     label_age_by_creation_date: "Age by creation date"
     help_settings_age_by_creation_date: "Calculate issue age by creation date."
     label_age_by_update_date: "Age by update date"
