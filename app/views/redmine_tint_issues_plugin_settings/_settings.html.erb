@@ -143,14 +143,18 @@
 
 <fieldset class="box"><legend><%= l('redmine_tint_issues.label_issue_age_base') %></legend>
   <p>
-    <%= label_tag( 'settings[age_by_creation_date]', l('redmine_tint_issues.label_age_by_creation_date')) %>
-    <%= radio_button_tag( 'settings[age_by_creation_date]', '1', settings['age_by_creation_date'] == '1') %>
+    <label>
+      <%= l('redmine_tint_issues.label_age_by_creation_date') %>
+      <%= radio_button_tag( 'settings[age_by_creation_date]', '1', settings['age_by_creation_date'] == '1') %>
+    </label>
     <%= content_tag(:a,    l(:label_help), :href => "#", :class => "icon icon-help", :title => l(:label_help), :onclick => "$('#help_settings_age_by_creation_date').toggle(); return false;" ) %>
     <%= content_tag(:span, l('redmine_tint_issues.help_settings_age_by_creation_date'), :id => 'help_settings_age_by_creation_date', :style => 'display:none;') %>
   </p>
   <p>
-    <%= label_tag( 'settings[age_by_creation_date]', l('redmine_tint_issues.label_age_by_update_date')) %>
-    <%= radio_button_tag( 'settings[age_by_creation_date]', '0', settings['age_by_creation_date'] == '0') %>
+    <label>
+      <%= l('redmine_tint_issues.label_age_by_update_date') %>
+      <%= radio_button_tag( 'settings[age_by_creation_date]', '0', settings['age_by_creation_date'] == '0') %>
+    </label>
     <%= content_tag(:a, l(:label_help), :href => "#", :class => "icon icon-help", :title => l(:label_help), :onclick => "$('#help_settings_age_by_update_date').toggle(); return false;" ) %>
     <%= content_tag(:span, l('redmine_tint_issues.help_settings_age_by_update_date'), :id => 'help_settings_age_by_update_date', :style => 'display:none;') %>
   </p>
