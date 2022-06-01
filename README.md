@@ -57,6 +57,12 @@ The style can easily be changed by amending the style sheet in the assets/styles
 
 ### Change-Log* 
 
+**1.3.0**
+ - supports Redmine 5
+ 
+**1.2.1**
+ - bug fix: virgin plugin was trying to read plugin settings value, which do not exist
+ 
 **1.2.0**
  - support individual color selection for each color code in plugin setup
  - choose to base issue age on creation date or on last update date
