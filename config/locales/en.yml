@@ -20,31 +20,31 @@
 #
 
 en:
-  project_module_redmine_tint_issues: "Tint Issues"
+  project_module_redmine_tint_issues:    'Tint Issues'
   
   redmine_tint_issues:
-    settings_label_assigned_issues: 'assigned issues'
-    
-    settings_label_current_issue_age: '"current issues" are younger than'
-    settings_label_old_issue_age: '"old issues" are younger than'
-    settings_label_older_issue_age: '"older issues" are younger than'
-    settings_label_veryold_issue_age: '"very old issues" are younger than'
-    settings_label_ancient_issue_age: '"ancient" issues'
-    
-    settings_label_hours: 'hours'
-    settings_label_days: 'days'
-    settings_label_weeks: 'weeks'
-    settings_label_months: 'months'
-  
-    settings_label_hasduedate: 'has due date'
-    settings_label_due: '"due" is closer than'
-    settings_label_moredue: '"more due" is closer than'
-    settings_label_verydue: '"very due" is closer than'
-    settings_label_overdue: 'overdue '
-    settings_label_nochoice: 'no possible choice'
-    
-    label_issue_age_base: "Issue age base"
-    label_age_by_creation_date: "Age by creation date"
-    help_settings_age_by_creation_date: "Calculate issue age by creation date."
-    label_age_by_update_date: "Age by update date"
-    help_settings_age_by_update_date: "Calculate issue age by last upddate date."
+    settings_label_assigned_issues:      "assigned issues"
+                                         
+    settings_label_current_issue_age:    "'current issues' are younger than"
+    settings_label_old_issue_age:        "'old issues' are younger than"
+    settings_label_older_issue_age:      "'older issues' are younger than"
+    settings_label_veryold_issue_age:    "'very old issues' are younger than"
+    settings_label_ancient_issue_age:    "'ancient' issues"
+                                         
+    settings_label_hours:                "hours"
+    settings_label_days:                 "days"
+    settings_label_weeks:                "weeks"
+    settings_label_months:               "months"
+                                         
+    settings_label_hasduedate:           "has due date"
+    settings_label_due:                  "'due' is closer than"
+    settings_label_moredue:              "'more due' is closer than"
+    settings_label_verydue:              "'very due' is closer than"
+    settings_label_overdue:              "overdue "
+    settings_label_nochoice:             "no possible choice"
+                                         
+    label_issue_age_base:                "Issue age base"
+    label_age_by_creation_date:          "Age by creation date"
+    help_settings_age_by_creation_date:  "Calculate issue age by creation date."
+    label_age_by_update_date:            "Age by update date"
+    help_settings_age_by_update_date:    "Calculate issue age by last upddate date."

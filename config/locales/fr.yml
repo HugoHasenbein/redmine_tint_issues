@@ -1,0 +1,50 @@
+# encoding: utf-8
+#
+# Redmine plugin to tint issues by age and due date
+#
+# Copyright © 2018-2020 Stephan Wenzel <stephan.wenzel@drwpatent.de>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+
+fr:
+  project_module_redmine_tint_issues:    "Tint Issues"
+  
+  redmine_tint_issues:
+    settings_label_assigned_issues:      'demandes attribués'
+                                         
+    settings_label_current_issue_age:    '"les demandes actuels" sont plus récents que'
+    settings_label_old_issue_age:        '"anciens demandes" sont plus récents que anciens demandes'
+    settings_label_older_issue_age:      'les "anciens demandes" sont plus récents que les anciens demandes'
+    settings_label_veryold_issue_age:    '"demandes très anciens" sont plus récents que'
+    settings_label_ancient_issue_age:    'demandes "historiques"'
+                                         
+    settings_label_hours:                'heures'
+    settings_label_days:                 'jours'
+    settings_label_weeks:                'semaines '
+    settings_label_months:               'mois'
+                                         
+    settings_label_hasduedate:           "avec date d'échéance"
+    settings_label_due:                  '"échéance proche" est plus proche que'
+    settings_label_moredue:              '"bientôt exigible" est plus proche que'
+    settings_label_verydue:              '"très prochainement exigible" est plus proche que'
+    settings_label_overdue:              'échéance dépassée'
+    settings_label_nochoice:             'pas de sélection possible'
+                                         
+    label_issue_age_base:                "Base de détermination de l'âge"
+    label_age_by_creation_date:          "Âge en fonction de la date de placement"
+    help_settings_age_by_creation_date:  "Calculer l'âge d'un demande uniquement en fonction de la date de placement"
+    label_age_by_update_date:            "Âge en fonction de la date de mise à jour"
+    help_settings_age_by_update_date:    "Calcule l'âge d'un demande en fonction de la dernière date de mise à jour"

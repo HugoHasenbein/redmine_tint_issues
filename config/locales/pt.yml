@@ -1,0 +1,50 @@
+# encoding: utf-8
+#
+# Redmine plugin to tint issues by age and due date
+#
+# Copyright © 2018-2020 Stephan Wenzel <stephan.wenzel@drwpatent.de>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+
+pt:
+  project_module_redmine_tint_issues:    "Tint Issues"
+  
+  redmine_tint_issues:
+    settings_label_assigned_issues:      "questões atribuídas"
+                                         
+    settings_label_current_issue_age:    "'questões actuais' são mais jovens do que"
+    settings_label_old_issue_age:        "'assuntos antigos' são mais novos que"
+    settings_label_older_issue_age:      "'questões mais antigas' são mais novas do que"
+    settings_label_veryold_issue_age:    "'questões muito antigas' são mais novas do que"
+    settings_label_ancient_issue_age:    "questões 'antigas'"
+                                         
+    settings_label_hours:                "horas"
+    settings_label_days:                 "dias"
+    settings_label_weeks:                "semanas"
+    settings_label_months:               "meses"
+                                         
+    settings_label_hasduedate:           "tem data de vencimento"
+    settings_label_due:                  "'due' está mais perto do que"
+    settings_label_moredue:              "'mais devido' está mais próximo do que"
+    settings_label_verydue:              "'muito devido' está mais perto do que"
+    settings_label_overdue:              "atrasado"
+    settings_label_nochoice:             "nenhuma escolha possível"
+                                         
+    label_issue_age_base:                "Emitir base etária"
+    label_age_by_creation_date:          "Idade por data de criação"
+    help_settings_age_by_creation_date:  "Calcular a idade de emissão por data de criação"
+    label_age_by_update_date:            "Idade por data de actualização"
+    help_settings_age_by_update_date:    "Calcular a idade de emissão até à última data de actualização"

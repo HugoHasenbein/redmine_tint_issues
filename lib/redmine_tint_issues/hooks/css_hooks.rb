@@ -19,6 +19,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 
-require_relative 'redmine_tint_issues/patches/issue_patch'
-require_relative 'redmine_tint_issues/patches/application_helper_patch'
-require_relative 'redmine_tint_issues/hooks/css_hooks'
+module RedmineTintIssues
+  module Hooks
+    class CssHooks < Redmine::Hook::ViewListener
+      render_on :view_layouts_base_html_head, :partial => 'hooks/redmine_tint_issues/tint_issues_css', :layout => false
+    end
+  end
+end

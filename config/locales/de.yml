@@ -20,31 +20,31 @@
 #
 
 de:
-  project_module_redmine_tint_issues: "Tint Issues"
+  project_module_redmine_tint_issues:    "Tint Issues"
   
   redmine_tint_issues:
-    settings_label_assigned_issues: 'zugewiesene Tickets'
-    
-    settings_label_current_issue_age: '"aktuelle Tickets" sind jünger als'
-    settings_label_old_issue_age: '"alte Tickets" sind jünger als'
-    settings_label_older_issue_age: '"ältere Tickets" sind jünger als'
-    settings_label_veryold_issue_age: '"sehr alte" Tickets sind jünger als'
-    settings_label_ancient_issue_age: '"historische" Tickets'
-    
-    settings_label_hours: 'Stunden'
-    settings_label_days: 'Tage'
-    settings_label_weeks: 'Wochen'
-    settings_label_months: 'Monate'
-    
-    settings_label_hasduedate: 'mit Abgabedatum'
-    settings_label_due: '"Fälligkeit naht" ist näher als'
-    settings_label_moredue: '"bald fällig" ist näher als'
-    settings_label_verydue: '"sehr bald fällig" ist näher als'
-    settings_label_overdue: 'verfristet'
-    settings_label_nochoice: 'keine Auswahl möglich'
-    
-    label_issue_age_base: "Basis der Bestimmung des Alters"
-    label_age_by_creation_date: "Alter nach Anlagedatum"
-    help_settings_age_by_creation_date: "Berechne das Alter eines Tickets ausschließlich nach dem Anlagedatum."
-    label_age_by_update_date: "Alter nach Aktualisierungsdatum"
-    help_settings_age_by_update_date: "Berechne das Alter eines Tickets nach dem letzten Aktualisierungsdatum."
+    settings_label_assigned_issues:      'zugewiesene Tickets'
+                                         
+    settings_label_current_issue_age:    '"aktuelle Tickets" sind jünger als'
+    settings_label_old_issue_age:        '"alte Tickets" sind jünger als'
+    settings_label_older_issue_age:      '"ältere Tickets" sind jünger als'
+    settings_label_veryold_issue_age:    '"sehr alte" Tickets sind jünger als'
+    settings_label_ancient_issue_age:    '"historische" Tickets'
+                                         
+    settings_label_hours:                'Stunden'
+    settings_label_days:                 'Tage'
+    settings_label_weeks:                'Wochen'
+    settings_label_months:               'Monate'
+                                         
+    settings_label_hasduedate:           'mit Abgabedatum'
+    settings_label_due:                  '"Fälligkeit naht" ist näher als'
+    settings_label_moredue:              '"bald fällig" ist näher als'
+    settings_label_verydue:              '"sehr bald fällig" ist näher als'
+    settings_label_overdue:              'verfristet'
+    settings_label_nochoice:             'keine Auswahl möglich'
+                                         
+    label_issue_age_base:                "Basis der Bestimmung des Alters"
+    label_age_by_creation_date:          "Alter nach Anlagedatum"
+    help_settings_age_by_creation_date:  "Berechne das Alter eines Tickets ausschließlich nach dem Anlagedatum."
+    label_age_by_update_date:            "Alter nach Aktualisierungsdatum"
+    help_settings_age_by_update_date:    "Berechne das Alter eines Tickets nach dem letzten Aktualisierungsdatum."
