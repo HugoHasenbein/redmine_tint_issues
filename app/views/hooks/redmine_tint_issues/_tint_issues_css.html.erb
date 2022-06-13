@@ -1,6 +1,9 @@
 <%= content_for :header_tags do -%>
-  <%# stylesheet_link_tag "redmine_tint_issues.css", :plugin => "redmine_tint_issues" %>
 <style>
+
+/* seems to be necessary on some browsers for the due date borders to be shown */
+table.list { border-collapse: collapse; }
+
 /* current */
 table.list tbody tr.current:nth-child(odd)         { background-color:<%= Setting['plugin_redmine_tint_issues']['current_issue_age_color'] %>; }
 table.list tbody tr.current:nth-child(even)        { background-color:<%= rti_lighten_css_color(  Setting['plugin_redmine_tint_issues']['current_issue_age_color'], 0.05) %>; }
@@ -33,67 +36,62 @@ table.list tbody tr.ancient:nth-child(even):hover  { background-color:<%= rti_co
 
 /* hasduedate */
 table.list tbody tr:nth-child(odd).hasduedate,
-table.list tbody tr:nth-child(even).hasduedate
-    {
+table.list tbody tr:nth-child(even).hasduedate {
     border-left-style: solid;
     border-right-style: solid;
-    border-left-width: 5px;
+    border-left-width: 10px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['hasduedate_color'] %>;
-    border-right-width: 5px;
+    border-right-width: 10px;
     border-right-color:<%= Setting['plugin_redmine_tint_issues']['hasduedate_color'] %>;
     border-collapse: separate;
-    }
+}
     
 /* due */
 table.list tbody tr:nth-child(odd).due,
-table.list tbody tr:nth-child(even).due
-    {
+table.list tbody tr:nth-child(even).due {
     border-left-style: solid;
     border-right-style: solid;
-    border-left-width: 5px;
+    border-left-width: 10px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['due_since_color'] %>;
-    border-right-width: 5px;
+    border-right-width: 10px;
     border-right-color: <%= Setting['plugin_redmine_tint_issues']['due_since_color'] %>;
     border-collapse: separate;
-    }
+}
     
 /* moredue */
 table.list tbody tr:nth-child(odd).moredue,
-table.list tbody tr:nth-child(even).moredue
-    {
+table.list tbody tr:nth-child(even).moredue {
     border-left-style: solid;
     border-right-style: solid;
-    border-left-width: 5px;
+    border-left-width: 10px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['moredue_since_color'] %>;
-    border-right-width: 5px;
+    border-right-width: 10px;
     border-right-color: <%= Setting['plugin_redmine_tint_issues']['moredue_since_color'] %>;
     border-collapse: separate;
-    }
+}
     
 /* verydue */
 table.list tbody tr:nth-child(odd).verydue,
-table.list tbody tr:nth-child(even).verydue
-    {
+table.list tbody tr:nth-child(even).verydue {
     border-left-style: solid;
     border-right-style: solid;
-    border-left-width: 5px;
+    border-left-width: 10px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['verydue_since_color'] %>;
-    border-right-width: 5px;
+    border-right-width: 10px;
     border-right-color: <%= Setting['plugin_redmine_tint_issues']['verydue_since_color'] %>;
     border-collapse: separate;
-    }
+}
     
 /* overdue */
 table.list tbody tr:nth-child(odd).overdue,
-table.list tbody tr:nth-child(even).overdue
-    {
+table.list tbody tr:nth-child(even).overdue {
     border-left-style: solid;
     border-right-style: solid;
-    border-left-width: 5px;
+    border-left-width: 10px;
     border-left-color: <%= Setting['plugin_redmine_tint_issues']['overdue_color'] %>;
-    border-right-width: 5px;
+    border-right-width: 10px;
     border-right-color: <%= Setting['plugin_redmine_tint_issues']['overdue_color'] %>;
     border-collapse: separate;
-    }
+}
 </style>
 <%- end %>
