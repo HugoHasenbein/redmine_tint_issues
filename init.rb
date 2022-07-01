@@ -33,6 +33,8 @@
 #       supports Redmine5
 # 1.3.1
 #       adpated css: table list border collapse
+# 1.3.2
+#       corrected typo in locales
 #
 require 'redmine'
 require_relative "lib/redmine_tint_issues"
@@ -41,7 +43,7 @@ Redmine::Plugin.register :redmine_tint_issues do
   name 'Redmine Tint Issues'
   author 'Stephan Wenzel'
   description 'Plugin for Redmine to tint issues by age and due date'
-  version '1.3.1'
+  version '1.3.2'
   url 'https://github.com/HugoHasenbein/redmine_tint_issues'
   author_url 'https://github.com/HugoHasenbein/redmine_tint_issues'
   
